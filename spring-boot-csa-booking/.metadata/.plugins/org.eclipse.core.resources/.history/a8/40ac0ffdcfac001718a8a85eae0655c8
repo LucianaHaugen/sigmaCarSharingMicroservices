@@ -21,16 +21,9 @@ public class BookingService {
 		return bookings;
 	}
 	
-	public List<Booking> getAllBookingsOfUser(long userId){
+	public List<Booking> getAllBookingsOfUser(long id){
 		List<Booking> bookings = new ArrayList<>();
-		bookingRepository.findByUserId(userId)
-		.forEach(bookings::add);
-		return bookings;
-	}
-	
-	public List<Booking> getAllBookingsOfVehicle(long vehicleId){
-		List<Booking> bookings = new ArrayList<>();
-		bookingRepository.findByVehicleId(vehicleId)
+		bookingRepository.findByUserId(id)
 		.forEach(bookings::add);
 		return bookings;
 	}

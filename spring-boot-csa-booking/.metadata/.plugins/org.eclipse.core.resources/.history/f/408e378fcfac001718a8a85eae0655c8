@@ -11,8 +11,6 @@ public interface BookingRepository extends CrudRepository<Booking, Long>{
 	
 	public List<Booking> findByUserId(Long userId);
 	
-	public List<Booking> findByVehicleId(Long vehicleId);
-	
 	public List<Booking> findByStartingDate(Date startingDate);
 	
 	public List<Booking> findByDestination(String destination);

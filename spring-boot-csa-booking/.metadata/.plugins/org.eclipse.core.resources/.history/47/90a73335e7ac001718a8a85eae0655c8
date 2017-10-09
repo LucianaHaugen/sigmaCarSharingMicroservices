@@ -42,16 +42,6 @@ public class BookingController {
 		return bookingService.getBooking(id);
 	}
 	
-	@GetMapping("/bookings/user/{userId}")
-	public List<Booking>getAllBookingByUser(@PathVariable long userId){
-		return bookingService.getAllBookingsOfUser(userId);
-	}
-	
-	@GetMapping("/bookings/vehicle/{vehicleId}")
-	public List<Booking>getAllBookingByVehicle(@PathVariable long vehicleId){
-		return bookingService.getAllBookingsOfVehicle(vehicleId);
-	}
-	
 	@RequestMapping(method=RequestMethod.POST, value="users/{userId}/bookings")
 	public void addBooking(@RequestBody Booking booking, @PathVariable long userId) {
 		//TODO: booking.setUser(userId);
