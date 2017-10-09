@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/csa-jar.jar csa-jar.jar
+EXPOSE 8085
+ENTRYPOINT ["java", "-jar", "csa-jar.jar"]

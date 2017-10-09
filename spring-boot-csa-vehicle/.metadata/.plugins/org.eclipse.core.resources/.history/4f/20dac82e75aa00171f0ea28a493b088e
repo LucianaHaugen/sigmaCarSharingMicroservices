@@ -1,0 +1,14 @@
+$(document).ready(function() {
+    $.ajax({
+        url: "http://localhost:8080/users/1"
+    }).then(function(data, status, jqxhr) {
+       $('.user-id').append(user.userId);
+       $('.user-name').append(user.userName);
+       console.log(jqxhr);
+    });
+    
+    $.getJSON('http://localhost:8080/users/1', function(data) {
+        //data is the JSON string
+    
+    });
+});

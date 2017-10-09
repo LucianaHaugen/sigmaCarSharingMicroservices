@@ -1,0 +1,8 @@
+$(document).ready(function() {
+	fetch('http://localhost:8080/users/1')
+    .then(res => res.json())
+    .then((out) => {
+        console.log('Output: ', out);
+}).catch(err => console.error(err));
+    
+});

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html data-ng-app="webApp">
+<head>
+<meta charset="UTF-8">
+<title>CarSharingApp</title>
+</head>
+<body data-ng-controller="app.module.js">
+	Navbar
+	<div ui-view="navbar">
+		<div ng-cloak>
+			<div class="row">
+				
+				<div class="col-md-8">
+					<h1>Welcome, CSA!</h1>
+					<p>Gateway via Html5</p>
+
+					<div ng-switch="vm.isAuthenticated()">
+						<div class="alert alert-success" ng-switch-when="true"
+							translate="home.logged.message"
+							translate-values="{username: '{{vm.account.login}}'}">You
+							are logged in as user "{{vm.account.login}}".</div>
+
+						<div class="alert alert-warning" ng-switch-when="false"
+							translate="global.messages.info.authenticated" translate-compile>
+							If you want to <a class="alert-link" href=""
+								ng-click="vm.login()">sign in</a>, you can try the default
+							accounts:<br />- Administrator (login="admin" and
+							password="admin") <br />- User (login="user" and
+							password="user").
+						</div>
+
+						<div class="alert alert-warning" ng-switch-when="false"
+							translate="global.messages.info.register" translate-compile>
+							You don't have an account yet? <a class="alert-link"
+								ui-sref="register">Register a new account</a>
+						</div>
+					</div>
+
+					<p translate="home.question">If you have any question on
+						JHipster:</p>
+
+					<ul>
+						<li><a href="http://jhipster.github.io/" target="_blank"
+							translate="home.link.homepage">JHipster homepage</a></li>
+						<li><a href="http://stackoverflow.com/tags/jhipster/info"
+							target="_blank" translate="home.link.stackoverflow">JHipster
+								on Stack Overflow</a></li>
+						<li><a
+							href="https://github.com/jhipster/generator-jhipster/issues?state=open"
+							target="_blank" translate="home.link.bugtracker">JHipster bug
+								tracker</a></li>
+						<li><a href="https://gitter.im/jhipster/generator-jhipster"
+							target="_blank" translate="home.link.chat">JHipster public
+								chat room</a></li>
+						<li><a href="https://twitter.com/java_hipster"
+							target="_blank" translate="home.link.follow">follow
+								@java_hipster on Twitter</a></li>
+					</ul>
+
+					<p>
+						<span translate="home.like">If you like JHipster, don't
+							forget to give us a star on </span>&nbsp;<a
+							href="https://github.com/jhipster/generator-jhipster"
+							target="_blank" translate="home.github">Github</a>!
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	Container
+	<div class="container">
+		<div class="well" ui-view="content">Angular views</div>
+
+		<div class="footer" ng-cloak>
+			<p translate="footer">from the Sigma CarSharingApp team</p>
+		</div>
+	</div>
+
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/messageformat/messageformat.js"></script>
+	<script src="bower_components/json3/lib/json3.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-aria/angular-aria.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script
+		src="bower_components/angular-cache-buster/angular-cache-buster.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+	<script
+		src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+	<script src="bower_components/ngstorage/ngStorage.js"></script>
+	<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="bower_components/angular-translate/angular-translate.js"></script>
+	<script
+		src="bower_components/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.js"></script>
+	<script
+		src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+	<script
+		src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+	<script
+		src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script
+		src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.js"></script>
+	<script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+	<script
+		src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+	<!-- endinject -->
+
+	<!-- build:js app/app.js  -->
+	<script src="app/app.module.js"></script>
+	<script src="app/app.constant.js"></script>
+	<script src="app/app.state.js"></script>
+	<script src="app/navbar/navbar.controller.js"></script>
+	<script src="app/entities/entity.state.js"></script>
+	<script src="app/home/home.controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+package com.sigmatechnology.csa.entity;
+
+public enum BookingRegulations {
+
+	MAX_BOOKINGS_YEAR = 5
+    MAX_DISTANCE_YEAR = 400.0
+}

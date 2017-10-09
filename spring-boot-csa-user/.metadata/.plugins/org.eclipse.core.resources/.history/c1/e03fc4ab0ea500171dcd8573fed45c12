@@ -1,0 +1,29 @@
+package com.sigmatechnology.csa;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
+
+import com.fasterxml.jackson.databind.DeserializationFeature;
+
+@SpringBootApplication
+public class CsaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CsaApplication.class, args);
+	}
+	
+	//Tentativa de Nomear JSON
+	/*@Configuration
+    public static class JacksonConfig {
+
+        @Bean
+        public Jackson2ObjectMapperBuilder jacksonBuilder() {
+            Jackson2ObjectMapperBuilder builder = new Jackson2ObjectMapperBuilder();
+            builder.featuresToEnable(DeserializationFeature.UNWRAP_ROOT_VALUE);
+            return builder;
+        }
+    }*/
+}

@@ -1,0 +1,52 @@
+package com.sigmatechnology.csa.entity;
+
+import java.util.Date;
+
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+@Entity
+public class Booking {	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	//@DateTimeFormat(iso = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"))
+	@JsonFormat(pattern = "YYYY-MM-dd HH:mm")
+	@Temporal(TemporalType.TIMESTAMP)
+    private Date timeOfBooking;	
+	@Temporal(TemporalType.DATE)
+    private Date startingDate;	
+	@JsonFormat(pattern = "HH:mm")
+	@Temporal(TemporalType.TIME)
+    private Date startingTime;	
+	@Temporal(TemporalType.DATE)
+    private Date endingDate;	
+	@JsonFormat(pattern = "HH:mm")
+	@Temporal(TemporalType.TIME)
+    private Date endingTime;	
+    private boolean isConfirmed;  
+    private String errand;
+    private String destination;
+    private String purpose;
+ 
+    @ManyToOne
+    private long userId; 
+    
+    @ManyToOne
+    private long vehicleId;
+ 
+    
+	public Booking() {
+	}
+		
+
+	}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="app.js"></script>
+        <script type="text/javascript">
+        var jsonResult;
+
+        $.ajax({
+          dataType: "json",
+          url: "http://localhost:8080/users",
+          data: data,
+          success: function(data) {
+               jsonResult = data;
+            }
+        });
+        $(window).load(function(){
+            $(data).each(function() {
+                var output = "<a href='" + this.url + "'>
+                <div class='col-sm-12'>
+                <div class='panel panel-default'><
+                div class='panel-body'>
+                <h4>" + this.title + "</h4>
+                <p>" + this.content + "</p>
+                </div>
+                </div>
+                </div>
+                </a>";
+                $('#feed').append(output);
+            });
+            });
+        </script>
+        <script type="text/javascript">
+        $(window).load(function(){
+        var data={"users":[
+                {
+                    "title":"Dieter Rams Video",
+                    "content":"Only text will go here. Limited to 100 characters per panel.",
+                    "url":"http://website.me/video.php?=89697976996",
+                },
+                {
+                    "title":"IoT Ecosystem",
+                    "content":"Villalobos",
+                    "url":"http://google.com",
+                },
+                {
+                    "title":"IoT Ecosystem",
+                    "content":"Villalobos",
+                    "url":"http://google.com",
+                },
+                {
+                    "title":"IoT Ecosystem",
+                    "content":"Villalobos",
+                    "url":"http://google.com",
+                },
+                {
+                    "title":"IoT Ecosystem",
+                    "content":"Villalobos",
+                    "url":"http://google.com",
+                },
+                {
+                    "title":"IoT Ecosystem",
+                    "content":"Villalobos",
+                    "url":"http://google.com",
+                },
+                {
+                    "title":"IoT Ecosystem",
+                    "content":"Villalobos",
+                    "url":"http://google.com",
+                }
+        ]}
+        $(data.users).each(function() {
+            var output = "<a href='" + this.url + "'><div class='col-sm-12'><div class='panel panel-default'><div class='panel-body'><h4>" + this.title + "</h4><p>" + this.content + "</p></div></div></div></a>";
+            $('#feed').append(output);
+        });
+        });
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <p class="user-id">The user Id is </p>
+            <p class="user-name">The userName is </p>
+        </div>
+    </body>
+</html>

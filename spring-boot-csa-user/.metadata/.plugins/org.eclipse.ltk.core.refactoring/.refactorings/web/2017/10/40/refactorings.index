@@ -1,0 +1,15 @@
+1506856194052	Delete element
+1506859235712	Delete element
+1506879696520	Delete element
+1506882614873	Move 'app.constant.js' to 'webapp'
+1506882675243	Rename resource 'app.state.sj'
+1506882936998	Move 'app.state.js' to 'webapp'
+1506885341911	Move 'entities' to 'app'
+1506885346694	Move 'home' to 'app'
+1506885370613	Move 'navbar' to 'app'
+1506885391895	Move 3 resources to 'app'
+1506885560997	Move 'bower_components' to 'webapp'
+1506886811515	Move 25 resources to 'bower_components'
+1506886818929	Delete element
+1506933966605	Delete elements
+1506936214766	Rename field 'id'

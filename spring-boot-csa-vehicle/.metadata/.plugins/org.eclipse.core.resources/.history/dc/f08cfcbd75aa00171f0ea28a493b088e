@@ -1,0 +1,24 @@
+$(document).ready(function() {
+    $.ajax({
+        url: "http://localhost:8080/users/1"
+    }).then(function(data, status, jqxhr) {
+       $('.user-id').append(user.userId);
+       $('.user-name').append(user.userName);
+       console.log(jqxhr);
+    });
+    
+    $.getJSON('http://query.yahooapis.com/v1/public/yql?q=select%20%2a%20from%20yahoo.finance.quotes%20WHERE%20symbol%3D%27WRC%27&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback', function(data) {
+        //data is the JSON string
+    });
+    
+    var jsonResult;
+
+    $.ajax({
+      dataType: "json",
+      url: url,
+      data: data,
+      success: function(data) {
+           jsonResult = data;
+        }
+    });
+});

@@ -1,0 +1,18 @@
+Mon Oct 09 08:57:46 CEST 2017
+INFO org.eclipse.rse.ui  Loading class org.eclipse.rse.ui.RSEUIPlugin
+--------------------------------------------
+Mon Oct 09 08:57:46 CEST 2017
+INFO org.eclipse.rse.ui  in SubSystemConfiguration.getSubSytems(conn, force) - returning empty array
+--------------------------------------------
+Mon Oct 09 08:57:46 CEST 2017
+INFO org.eclipse.rse.ui  in SubSystemConfiguration.getSubSytems(conn, force) - returning empty array
+--------------------------------------------
+Mon Oct 09 08:57:46 CEST 2017
+INFO org.eclipse.rse.ui  in SubSystemConfiguration.getSubSystems(conn, force) - not restored
+--------------------------------------------
+Mon Oct 09 08:57:46 CEST 2017
+INFO org.eclipse.rse.ui  in SubSystemConfiguration.getSubSytems(conn, force) - returning empty array
+--------------------------------------------
+Mon Oct 09 08:57:46 CEST 2017
+INFO org.eclipse.rse.ui  in SubSystemConfiguration.getSubSystems(conn, force) - not restored
+--------------------------------------------
