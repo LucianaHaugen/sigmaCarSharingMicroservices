@@ -65,7 +65,7 @@ public class BookingController {
 		bookingService.updateBooking(id, booking);
 	}
 	
-	@RequestMapping(method=RequestMethod.DELETE, value="users/{userId}/bookings/{id}")
+	@RequestMapping(method=RequestMethod.DELETE, value="users{userId}/bookings/{id}")
 	public void deleteBooking(@PathVariable long id) {
 		bookingService.deleteBooking(id);
 	}
