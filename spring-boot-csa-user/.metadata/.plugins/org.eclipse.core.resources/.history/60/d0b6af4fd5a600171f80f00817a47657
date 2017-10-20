@@ -1,2 +1,0 @@
-spring.application.name=web
-server.tomcat.port-header=8081

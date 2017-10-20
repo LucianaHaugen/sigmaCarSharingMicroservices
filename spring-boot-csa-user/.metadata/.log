@@ -2139,3 +2139,31 @@ org.eclipse.core.runtime.CoreException: Launch configuration CsaApplication refe
 
 !ENTRY org.eclipse.debug.core 4 120 2017-10-06 10:13:00.421
 !MESSAGE Variable references non-existent resource : ${project_loc:csa}
+!SESSION 2017-10-10 12:53:02.311 -----------------------------------------------
+eclipse.buildId=3.9.0.201707061823-RELEASE-e47
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/lucianahaugen/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/lucianahaugen/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-10-10 12:54:51.598
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.rse.ui 1 0 2017-10-10 12:55:05.995
+!MESSAGE Loading class org.eclipse.rse.ui.RSEUIPlugin
+
+!ENTRY org.eclipse.rse.ui 1 0 2017-10-10 12:55:06.206
+!MESSAGE in SubSystemConfiguration.getSubSytems(conn, force) - returning empty array
+
+!ENTRY org.eclipse.rse.ui 1 0 2017-10-10 12:55:06.206
+!MESSAGE in SubSystemConfiguration.getSubSytems(conn, force) - returning empty array
+
+!ENTRY org.eclipse.rse.ui 1 0 2017-10-10 12:55:06.207
+!MESSAGE in SubSystemConfiguration.getSubSystems(conn, force) - not restored
+
+!ENTRY org.eclipse.rse.ui 1 0 2017-10-10 12:55:06.424
+!MESSAGE in SubSystemConfiguration.getSubSytems(conn, force) - returning empty array
+
+!ENTRY org.eclipse.rse.ui 1 0 2017-10-10 12:55:06.424
+!MESSAGE in SubSystemConfiguration.getSubSystems(conn, force) - not restored

@@ -6,6 +6,7 @@
 	<groupId>com.sigmatechnology.csa</groupId>
 	<artifactId>csa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!--<packaging>war</packaging>-->
 	<packaging>jar</packaging>
 
 	<name>csa</name>
@@ -64,6 +65,13 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
+		<!-- dependency when producing war file för deploying on aws Dvs. Embedded Tomcat will NOT be included in the application
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		ends here -->
 	</dependencies>
 
 	<build>
@@ -76,7 +84,7 @@
 					<imageName>csa-docker-image</imageName>
 					<baseImage>java:8</baseImage>
 					<entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
-					<!-- copy the service's jar file from target into the root directory 
+					<!-- copy the service's jar file from target into the root directory
 						of the image -->
 					<resources>
 						<resource>
