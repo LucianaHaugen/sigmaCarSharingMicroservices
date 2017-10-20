@@ -1,5 +1,5 @@
 INDEX VERSION 1.130+/Users/lucianahaugen/Documents/SIGMA/spring-boot-csa-microservices/spring-boot-csa-booking/.metadata/.plugins/org.eclipse.jdt.core
-3581844775.index
+3809523064.index
 4060207777.index
 1742739965.index
 924287308.index
@@ -25,13 +25,13 @@ INDEX VERSION 1.130+/Users/lucianahaugen/Documents/SIGMA/spring-boot-csa-microse
 2979435446.index
 3092323044.index
 867579519.index
-4205799437.index
 1052692209.index
-995153890.index
-2425668871.index
-1311371490.index
+4205799437.index
 3496398729.index
 3796455686.index
+2425668871.index
+995153890.index
+1311371490.index
 1508498788.index
 240223522.index
 2919226955.index
@@ -44,16 +44,16 @@ INDEX VERSION 1.130+/Users/lucianahaugen/Documents/SIGMA/spring-boot-csa-microse
 1438190192.index
 1334707495.index
 1044104405.index
-645918011.index
+3120791334.index
 440285282.index
 1268467849.index
-3120791334.index
+645918011.index
 2110671199.index
 624708564.index
 2178010105.index
 17371214.index
-3227702110.index
 2954841074.index
+3227702110.index
 1931402068.index
 1856491852.index
 2436078724.index
@@ -90,7 +90,7 @@ INDEX VERSION 1.130+/Users/lucianahaugen/Documents/SIGMA/spring-boot-csa-microse
 3243786996.index
 311902422.index
 1487194790.index
+3581844775.index
 3409426419.index
 635715582.index
 3717570552.index
-3809523064.index
